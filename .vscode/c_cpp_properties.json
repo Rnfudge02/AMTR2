@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Pico",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Build/Dependencies/pico_sdk/src/**",
+                "${workspaceFolder}/Build/Dependencies/pico_sdk/src/common/**",
+                "${workspaceFolder}/Build/Dependencies/pico_sdk/src/rp2_common/**",
+                "${workspaceFolder}/Build/Dependencies/pico_sdk/src/rp2040/**",
+                "${env:PICO_SDK_PATH}/**"
+            ],
+            "defines": [
+                "PICO_ON_DEVICE=1",
+                "PICO_NO_TIME=1",
+                "PICO_NO_RAM_VECTOR_TABLE=1"
+            ],
+            "compilerPath": "/path/to/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-arm",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
